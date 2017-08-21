@@ -1,0 +1,41 @@
+.contacts {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.contacts__link {
+  line-height: 1.2;
+  color: #fff;
+  padding-left: 30px;
+  position: relative;
+  
+  &:first-of-type {
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+    &::before {
+      width: 20px;
+      height: 20px;
+      background-position: -76px -5px;
+    }
+  }
+  
+  &:hover {
+    color: @yellow;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 17px;
+    height: 18px;
+    background-position: -49px -5px; 
+    background-image: url(../../img/sprite.png);
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,26 @@
+.menu__main {
+  display: flex;
+}
+
+.menu__link {
+  color: #fff;
+  margin-right: 40px;
+  padding-bottom: 8px;
+  
+  &:hover {
+    border-bottom: 3px solid @yellow;
+  }
+  
+  &:active {
+    border-bottom: 3px solid @yellow;
+    color: @yellow;
+  }
+}
+
+.menu__item:last-child .menu__link {
+  margin-right: 0;
+}
+
+.menu__item {
+  padding-bottom: 25px;
+}
