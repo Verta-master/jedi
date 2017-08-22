@@ -431,13 +431,6 @@ ul {
   padding-left: 20px;
   padding-right: 5px;
 }
-.header__animation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 674px;
-}
 .menu__main {
   display: -ms-flexbox;
   display: flex;
