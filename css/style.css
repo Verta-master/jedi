@@ -808,6 +808,35 @@ ul {
   background-position: -149px -5px;
 }
 @media (max-width: 769px) {
+  .footer__top,
+  .footer__bottom {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .footer__right {
+    height: 375px;
+    padding-left: 0;
+  }
+  .form {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .form--footer {
+    margin-right: auto;
+    padding-left: 0;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .form__label {
+    text-align: left;
+    padding-left: 30px;
+  }
+  .form__label::before {
+    left: 0;
+  }
+  .form__label::after {
+    left: 5px;
+  }
   .logo {
     -ms-flex-order: 1;
         order: 1;
@@ -834,106 +863,8 @@ ul {
   .menu__link {
     text-align: center;
   }
-  .form {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .form--footer {
-    margin-right: auto;
-    padding-left: 0;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-  }
-  .form__label {
-    text-align: left;
-    padding-left: 30px;
-  }
-  .form__label::before {
-    left: 0;
-  }
-  .form__label::after {
-    left: 5px;
-  }
-  .footer__top,
-  .footer__bottom {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .footer__right {
-    height: 375px;
-    padding-left: 0;
-  }
-}
-@media (max-width: 480px) {
-  .header__wrap {
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-  }
-  .menu__main {
-    padding-top: 20px;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-  }
-  .menu__link {
-    margin-right: 0;
-  }
-  .contacts {
-    -ms-flex-align: center;
-        align-items: center;
-    padding-top: 20px;
-  }
-  .title {
-    margin-top: 40px;
-  }
-  .title__main {
-    font-size: 40px;
-    margin-bottom: 30px;
-  }
-  .title__sub {
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .promo {
-    padding-bottom: 0;
-  }
-  .call__title {
-    font-size: 24px;
-    line-height: 30px;
-  }
-  .form {
-    -ms-flex-pack: center;
-        justify-content: center;
-  }
-  .form--footer {
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-  }
-  .form__label {
-    font-size: 12px;
-  }
-  .form__input--footer {
-    width: 277px;
-  }
 }
 @media (max-width: 600px) {
-  .title {
-    margin-top: 60px;
-    padding: 0 20px;
-  }
-  .title__main {
-    font-size: 50px;
-  }
-  .title__sub {
-    line-height: 36px;
-  }
   .footer__left,
   .footer__right,
   .footer__block {
@@ -955,5 +886,74 @@ ul {
   }
   .footer__block:first-of-type {
     margin-bottom: 20px;
+  }
+  .title {
+    margin-top: 60px;
+    padding: 0 20px;
+  }
+  .title__main {
+    font-size: 50px;
+  }
+  .title__sub {
+    line-height: 36px;
+  }
+}
+@media (max-width: 480px) {
+  .call__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .contacts {
+    -ms-flex-align: center;
+        align-items: center;
+    padding-top: 20px;
+  }
+  .form {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .form--footer {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .form__label {
+    font-size: 12px;
+  }
+  .form__input--footer {
+    width: 277px;
+  }
+  .header__wrap {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .menu__main {
+    padding-top: 20px;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .menu__link {
+    margin-right: 0;
+  }
+  .promo {
+    padding-bottom: 0;
+  }
+  .title {
+    margin-top: 40px;
+  }
+  .title__main {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .title__sub {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
