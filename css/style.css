@@ -416,6 +416,7 @@ ul {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  animation: head_slide 25s infinite;
 }
 .header__wrap {
   max-width: 1168px;
@@ -430,6 +431,17 @@ ul {
       align-items: center;
   padding-left: 20px;
   padding-right: 5px;
+}
+@keyframes head_slide {
+  0% {
+    background-size: 100% 100%;
+  }
+  50% {
+    background-size: 120% 120%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
 }
 .menu__main {
   display: -ms-flexbox;
@@ -501,7 +513,7 @@ ul {
 }
 .title__main {
   font-size: 90px;
-  color: #fff343;
+  color: #fff;
   font-weight: 700;
   text-align: center;
   margin-bottom: 65px;
