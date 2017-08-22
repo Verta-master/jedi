@@ -416,7 +416,6 @@ ul {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  animation: head_slide 25s infinite;
 }
 .header__wrap {
   max-width: 1168px;
@@ -431,17 +430,6 @@ ul {
       align-items: center;
   padding-left: 20px;
   padding-right: 5px;
-}
-@keyframes head_slide {
-  0% {
-    background-size: 100% 100%;
-  }
-  50% {
-    background-size: 120% 120%;
-  }
-  100% {
-    background-size: 100% 100%;
-  }
 }
 .menu__main {
   display: -ms-flexbox;
@@ -785,7 +773,7 @@ ul {
   color: #6a7374;
 }
 .footer__link:hover {
-  color: #01a02c;
+  border-bottom: 1px solid #6a7374;
 }
 .footer__text {
   margin-top: 5px;
