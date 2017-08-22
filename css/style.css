@@ -410,6 +410,7 @@ ul {
   width: 100%;
   min-height: 674px;
   padding-top: 49px;
+  position: relative;
   background-color: #241449;
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
@@ -429,6 +430,13 @@ ul {
       align-items: center;
   padding-left: 20px;
   padding-right: 5px;
+}
+.header__animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 674px;
 }
 .menu__main {
   display: -ms-flexbox;

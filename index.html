@@ -9,6 +9,7 @@
 </head>
 <body>
   <header class="header">
+    <div class="header__animation"></div>
     <div class="header__wrap">
       <img src="img/logo.png" alt="Logo" class="logo" width="137" height="92">
       <nav class="menu">
@@ -284,6 +285,15 @@
         </form>
       </div>
     </section>
-  </footer>  
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jparticle.jquery.min.js"></script>
+  <script>
+    $(".header__animation").jParticle({
+      background: "transparent",
+      particlesNumber: 50,
+    });
+  </script>
 </body>
 </html>
